@@ -13,9 +13,9 @@ puts Salary - Salary * Tax  # bug fixed!
 puts "Annual salary"
 puts (Salary - Salary * Tax) * Year_length
 
-puts "Enter your name"
+print "Enter your name: "
 myname = gets
-puts myname
+puts "Hello," + myname
 
 puts "Proggram finished. Press Enter to exit"
 gets
