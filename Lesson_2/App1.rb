@@ -1,6 +1,6 @@
-Salary=4000
-Tax=0.4
-Year_length=12
+Salary = 24000
+Tax = 0.4
+Year_length = 12
 puts "Salary"
 puts Salary
 
