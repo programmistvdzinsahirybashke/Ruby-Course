@@ -1,10 +1,14 @@
 puts "Сколько вам лет?"
 age = gets.chomp.to_i
 
-puts "Хотите играть (Y/N)"
+puts "Хотите играть? (Y/N)"
 answer = gets.capitalize.strip
 
-if age >= 18 && answer = "Y"
+if answer == "N"
+  puts "Очень жаль!"
+end
+
+if age >= 18 && answer == "Y"
   puts "Хорошо, поиграем!"
 
   money = 100
@@ -21,6 +25,7 @@ if age >= 18 && answer = "Y"
     z = rand 0..9
 
     print "#{x}#{y}#{z} "
+
     # 000
 
     if x == 0 && y == 0 && z == 0
@@ -33,6 +38,13 @@ if age >= 18 && answer = "Y"
     if x == 1 && y == 1 && z == 1
       puts "Вам зачислено 10 долларов"
       money = money + 10
+    end
+
+    #123
+
+    if x == 1 && y == 1 && z == 1
+      puts "Вам зачислено 10 долларов"
+      money = money + 123
     end
 
     #222
@@ -90,7 +102,6 @@ if age >= 18 && answer = "Y"
       puts "Вам зачислено 90 долларов"
       money = money + 90
     end
-
     puts "Осталось денег: #{money} долларов"
   end
 end
