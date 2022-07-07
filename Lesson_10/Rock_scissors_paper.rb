@@ -1,13 +1,16 @@
 loop do
   puts "Играем! Камень , ножницы или бумага? (введите Enter чтобы остановить игру)"
   answer = gets.strip.capitalize
+
   if answer == ""
     puts "Хорошо поиграли!"
     break
   end
+
   arr = %w[Камень Ножницы Бумага]
   x = rand 0..2
   puts arr[x]
+
   if answer == "Камень" && arr[x] == "Бумага"
     puts "Компьютер выиграл :("
   elsif answer == arr[x]
@@ -23,4 +26,5 @@ loop do
   elsif answer == "Бумага" && arr[x] == "Ножницы"
     puts "Компьютер выиграл :("
   end
+
 end
