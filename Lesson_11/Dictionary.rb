@@ -11,7 +11,7 @@ loop do
     if (dict.has_key?(eng))
       puts "Количество переводов слова #{eng}: #{dict[eng].size}"
       "Переводы: #{eng} - #{dict[eng].each_with_index do |i, x|
-        puts "#{x + 1}. #{i} "
+        puts "#{x+1}. #{i}"
       end}"
     else
       puts "Я вас не понял, введите слово без ошибок"
