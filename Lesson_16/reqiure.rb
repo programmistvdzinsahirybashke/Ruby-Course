@@ -1,2 +1,3 @@
-require_relative './bb.rb'
+$LOAD_PATH << './Lesson_16'
+require 'bb'
 BB.say_hi
