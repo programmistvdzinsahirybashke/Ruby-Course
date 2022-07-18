@@ -36,7 +36,7 @@ end
 artist = Artist.new "Lil Peep"
 
 album = Album.new "Lil Peep Part One"
-album2 = Album.new 'Come Over When You Are Sober'
+album2 = Album.new "Come Over When You Are Sober"
 artist.add_album album2
 artist.add_album album
 song1 = Song.new "Brightside", "3:42"
@@ -54,5 +54,5 @@ end
 
 puts "У #{artist.name} есть такие альбомы :"
 artist.albums.each do |album|
-   puts "#{album.name}"
+  puts "#{album.name}"
 end
