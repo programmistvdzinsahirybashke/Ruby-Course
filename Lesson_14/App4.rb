@@ -10,7 +10,7 @@ class Airplane
   end
 
   def fly
-    @speed = rand 400..900
+    @speed = rand 700..900
     @altitude = rand 7000..10000
   end
 
@@ -27,7 +27,7 @@ end
 models = ["Boeing-456", "Super-Jet", "Airbus-54"]
 planes = []
 
-100.times do
+10.times do
   model = models[rand(0..2)]
   plane = Airplane.new(model)
   planes << plane
