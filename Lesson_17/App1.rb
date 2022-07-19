@@ -1,6 +1,5 @@
-def mm hash
+def mm(hash)
   puts hash
 end
 
-send :mm , :a => 54
-
+send :mm, :a => 54

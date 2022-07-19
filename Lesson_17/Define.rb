@@ -1,5 +1,5 @@
 send :define_method, "aaa" do
-  puts 'Hello'
+  puts "Hello"
 end
 
 aaa

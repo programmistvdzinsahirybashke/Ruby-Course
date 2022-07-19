@@ -21,9 +21,9 @@ if answer == "Да"
     puts "Скорее всего, вам подойдет #{merida[1]} "
   elsif height < 178 && naznachenie == "Гревел" && speed == 2 && diametr == 28 && budget == 100_000
     puts "Скорее всего, вам подойдет #{merida[2]} "
-  elsif height < 185  && naznachenie == "Гревел" && speed == 2 && diametr == 28 && budget == 100_000
+  elsif height < 185 && naznachenie == "Гревел" && speed == 2 && diametr == 28 && budget == 100_000
     puts "Скорее всего, вам подойдет #{merida[3]} "
-  elsif height < 200  && naznachenie == "Гревел" && speed == 2 && diametr == 28 && budget == 100_000
+  elsif height < 200 && naznachenie == "Гревел" && speed == 2 && diametr == 28 && budget == 100_000
     puts "Скорее всего, вам подойдет #{merida[4]} "
   end
 else

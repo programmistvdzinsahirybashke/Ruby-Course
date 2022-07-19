@@ -1,11 +1,9 @@
 class Something
-  attr_accessor :x , :y
+  attr_accessor :x, :y
 
   def initialize(hash)
     hash.each do |k, v|
-
       send "#{k}=", v
-
     end
   end
 end
